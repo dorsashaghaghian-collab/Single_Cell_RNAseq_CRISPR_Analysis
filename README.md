@@ -77,6 +77,20 @@ Uniquely mapped reads:
 Unique mapping rate:
 71.04%
 
+## Key Biological Observations
+
+PCA and UMAP analysis revealed distinct transcriptional states among cancer cells.
+
+Major transcriptional programs identified included:
+
+- interferon response signatures
+- proliferation-associated states
+- extracellular matrix associated programs
+- stress-response signatures
+
+
+Cluster-specific marker analysis was performed using FindAllMarkers().
+
 
 ## Single-cell analysis
 
