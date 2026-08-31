@@ -88,6 +88,38 @@ Genes detected:
 
 19,641
 
+## Analysis Summary
+
+Raw sequencing data were processed using STARsolo 
+to generate a cell-by-gene expression matrix.
+
+The dataset was evaluated through:
+
+- sequencing quality assessment
+- barcode/UMI structure inspection
+- gene expression quantification
+- single-cell quality control
+- normalization
+- highly variable gene selection
+- PCA-based dimensionality reduction
+- UMAP visualization
+- graph-based clustering
+- marker gene identification
+
+
+Final dataset:
+
+Cells analyzed: 878
+
+Genes detected: 19,641
+
+Clusters identified: 4
+
+Resolution:
+0.5
+
+Dimensionality:
+20 PCs
 
 Generated outputs:
 
