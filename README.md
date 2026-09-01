@@ -320,15 +320,18 @@ Generated outputs:
 - Cluster marker identification
 
 
-## Important note
+CRISPR guide information was integrated from STARsolo CRISPR features and used for perturbation identity assignment.
 
-Although the dataset was originally associated with CRISPR perturbation experiments, the processed STARsolo feature matrix contained only:
+The final dataset contained cells assigned to:
 
-Gene Expression
+- sgAxl
+- sgPrmt1
+- sgRipk1
+- sgNC1
+- sgNC2
+- No guide cells
 
-No CRISPR Guide Capture features were detected.
-
-Therefore, direct guide RNA assignment was not performed in this dataset.
+Guide assignment was validated using perturbation identity visualization.
 
 
 Future work:
