@@ -182,30 +182,39 @@ Additional analysis tools:
 
 # Key Results
 
-
 ## 1. Single-cell Perturbation Landscape
 
-![UMAP](results/Figures/Final_UMAP_gRNA.png)
+UMAP visualization of cells colored by CRISPR perturbation identity.
+
+![Perturbation UMAP](03_results/Figures/Final_UMAP_gRNA.png)
 
 
 ## 2. Differential Expression Analysis
 
-![Volcano](results/Figures/Final_DE_Volcano_panel.png)
+Pseudobulk DESeq2 analysis identified perturbation-specific transcriptional changes.
+
+![Differential Expression](03_results/Figures/Final_DE_Volcano_panel.png)
 
 
 ## 3. Pathway Remodeling
 
-![GSEA](results/Figures/Final_GSEA_NES_heatmap.png)
+Hallmark GSEA revealed distinct pathway programs activated by each perturbation.
+
+![GSEA](03_results/Figures/Final_GSEA_NES_heatmap.png)
 
 
 ## 4. Single-cell Signature Activity
 
-![AUCell](results/Figures/AUCell_signature_heatmap.png)
+AUCell scoring was used to quantify pathway activity at single-cell resolution.
+
+![AUCell](03_results/Figures/AUCell_signature_heatmap.png)
 
 
 ## 5. Mechanistic Interpretation
 
-![Mechanistic](results/Figures/Final_Mechanistic_heatmap.png)
+Integrated signature analysis summarizes perturbation-induced cellular state changes.
+
+![Mechanistic Model](03_results/Figures/Final_Mechanistic_heatmap.png)
 
 ## Key Biological Observations
 
