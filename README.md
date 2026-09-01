@@ -1,3 +1,8 @@
+# Single-cell Perturb-seq Analysis Reveals Perturbation-specific Transcriptional Programs
+
+![Workflow](results/Figures/Figure1_Final_PerturbSeq_summary.png)
+
+
 ## Project Overview
 
 This project presents an end-to-end single-cell Perturb-seq analysis workflow to investigate how CRISPR-mediated genetic perturbations reshape transcriptional states at single-cell resolution.
@@ -12,6 +17,17 @@ The analysis integrates:
 - Hallmark GSEA
 - AUCell pathway activity scoring
 - mechanistic interpretation of perturbation effects
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Analysis Workflow](#analysis-workflow)
+- [Major Findings](#major-findings)
+- [Repository Structure](#repository-structure)
+- [Methods](#methods)
+- [Results](#results)
+- [Reproducibility](#reproducibility)
 
 
 Research question:
@@ -91,6 +107,59 @@ AUCell pathway activity scoring
 
 Mechanistic interpretation
 
+## Major Findings
+
+The integrated analysis identified distinct transcriptional states induced by different genetic perturbations.
+
+### Axl perturbation
+
+Associated with:
+
+- MYC target activation
+- mTORC1 signaling
+- DNA repair programs
+
+
+### Prmt1 perturbation
+
+Associated with:
+
+- Suppression of MYC/E2F-associated programs
+- Oxidative stress response
+- Hypoxia-related transcriptional changes
+
+
+### Ripk1 perturbation
+
+Associated with:
+
+- Interferon alpha response
+- Interferon gamma response
+- Inflammatory signaling activation
+
+
+Together, these results demonstrate perturbation-specific remodeling of cellular transcriptional states.
+
+## Repository Structure
+├── scripts/
+│ └── Analysis scripts
+│
+├── results/
+│ ├── QC
+│ ├── Differential_expression
+│ ├── GO_enrichment
+│ ├── GSEA
+│ ├── Signature_scoring
+│ └── Figures
+│
+├── objects/
+│ └── Seurat objects
+│
+└── documentation/
+├── Methods.md
+├── Biological_summary.md
+└── Figures_description.md
+
 ## Tools
 
 - STARsolo
@@ -113,16 +182,36 @@ Additional analysis tools:
 
 ## Results
 
-### Alignment summary
+### Single-cell landscape
 
-Input reads:
-42,915,206
+UMAP visualization demonstrates cellular distribution according to perturbation identity.
 
-Uniquely mapped reads:
-30,485,273
+![UMAP](results/Figures/Final_UMAP_gRNA.png)
 
-Unique mapping rate:
-71.04%
+
+### Differential expression
+
+Perturbation-specific transcriptional changes were identified using pseudobulk DESeq2.
+
+Results:
+
+- [Axl DEGs](results/Differential_expression)
+- [Prmt1 DEGs](results/Differential_expression)
+- [Ripk1 DEGs](results/Differential_expression)
+
+
+### Pathway remodeling
+
+Hallmark GSEA identified distinct pathway responses.
+
+![GSEA](results/Figures/Final_GSEA_NES_heatmap.png)
+
+
+### Single-cell pathway activity
+
+AUCell scoring quantified pathway activity at single-cell resolution.
+
+![AUCell](results/Figures/AUCell_signature_heatmap.png)
 
 ## Key Biological Observations
 
@@ -228,3 +317,29 @@ Samples analyzed:
 - SRR19654345
 - SRR19654346
 - SRR19654347
+
+## Reproducibility
+
+All analysis scripts, processed objects, and result files are provided.
+
+Main computational tools:
+
+- STARsolo
+- Seurat
+- DESeq2
+- clusterProfiler
+- AUCell
+- ggplot2
+
+
+Detailed methodology is available in:
+
+[Methods](documentation/Methods.md)
+
+Biological interpretation:
+
+[Biological Summary](documentation/Biological_summary.md)
+
+Figure descriptions:
+
+[Figures Description](documentation/Figures_description.md)
