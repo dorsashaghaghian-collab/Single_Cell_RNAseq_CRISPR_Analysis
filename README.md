@@ -180,38 +180,32 @@ Additional analysis tools:
 - patchwork
 
 
-## Results
+# Key Results
 
-### Single-cell landscape
 
-UMAP visualization demonstrates cellular distribution according to perturbation identity.
+## 1. Single-cell Perturbation Landscape
 
 ![UMAP](results/Figures/Final_UMAP_gRNA.png)
 
 
-### Differential expression
+## 2. Differential Expression Analysis
 
-Perturbation-specific transcriptional changes were identified using pseudobulk DESeq2.
-
-Results:
-
-- [Axl DEGs](results/Differential_expression)
-- [Prmt1 DEGs](results/Differential_expression)
-- [Ripk1 DEGs](results/Differential_expression)
+![Volcano](results/Figures/Final_DE_Volcano_panel.png)
 
 
-### Pathway remodeling
-
-Hallmark GSEA identified distinct pathway responses.
+## 3. Pathway Remodeling
 
 ![GSEA](results/Figures/Final_GSEA_NES_heatmap.png)
 
 
-### Single-cell pathway activity
-
-AUCell scoring quantified pathway activity at single-cell resolution.
+## 4. Single-cell Signature Activity
 
 ![AUCell](results/Figures/AUCell_signature_heatmap.png)
+
+
+## 5. Mechanistic Interpretation
+
+![Mechanistic](results/Figures/Final_Mechanistic_heatmap.png)
 
 ## Key Biological Observations
 
