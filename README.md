@@ -178,6 +178,32 @@ Associated with:
 
 Together, these results demonstrate perturbation-specific remodeling of cellular transcriptional states.
 
+## Key Figures
+
+### Perturbation landscape
+
+![UMAP](03_results/Figures/Final_UMAP_gRNA.png)
+
+
+### Differential expression
+
+![DE](03_results/Figures/Final_DE_Volcano_panel.png)
+
+
+### Pathway remodeling
+
+![GSEA](03_results/Figures/Final_GSEA_NES_heatmap.png)
+
+
+### Mechanistic interpretation
+
+![Mechanistic](03_results/Figures/Final_Mechanistic_heatmap.png)
+
+
+### Single-cell pathway activity
+
+![AUCell](03_results/Figures/AUCell_signature_heatmap.png)
+
 ## Repository Structure
 ├── scripts/
 │ └── Analysis scripts
