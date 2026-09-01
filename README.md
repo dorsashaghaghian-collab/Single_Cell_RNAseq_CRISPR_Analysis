@@ -1,57 +1,95 @@
-# Single-Cell RNA-seq Analysis of CRISPR Perturbation Dataset
-
 ## Project Overview
 
-This project implements an end-to-end single-cell RNA sequencing workflow for analyzing CRISPR perturbation experiments.
+This project presents an end-to-end single-cell Perturb-seq analysis workflow to investigate how CRISPR-mediated genetic perturbations reshape transcriptional states at single-cell resolution.
 
-The main research question:
+The analysis integrates:
 
-**How do CRISPR-mediated genetic perturbations reshape cellular states and transcriptional programs in cancer cells at single-cell resolution?**
+- STARsolo preprocessing
+- Seurat-based single-cell analysis
+- gRNA identity assignment
+- pseudobulk differential expression
+- pathway enrichment analysis
+- Hallmark GSEA
+- AUCell pathway activity scoring
+- mechanistic interpretation of perturbation effects
+
+
+Research question:
+
+**How do genetic perturbations reshape cellular states and transcriptional programs at single-cell resolution?**
 
 
 ## Dataset
-
-Dataset:
-GSM6243407
 
 Organism:
 Mus musculus
 
 Technology:
-Single-cell RNA sequencing
+Single-cell RNA sequencing with CRISPR perturbation information
 
-Sequencing platform:
-Illumina
+Processed samples:
+
+- SRR19654344
+- SRR19654345
+- SRR19654346
+- SRR19654347
 
 
-## Workflow
+Final analyzed dataset:
+
+- Cells: 878
+- Genes: 19,641
+- Perturbations:
+    - sgAxl
+    - sgPrmt1
+    - sgRipk1
+    - sgNC1
+    - sgNC2
+
+
+## Analysis Workflow
 
 FASTQ
-↓
-FASTQC / MultiQC
-↓
-FASTQ structure identification
-↓
-10x barcode and UMI characterization
-↓
-STARsolo alignment
-↓
-Cell × Gene expression matrix
-↓
-Seurat analysis
-↓
-Quality control
-↓
-Normalization
-↓
-PCA
-↓
-UMAP
-↓
-Clustering
-↓
-Marker gene identification
 
+↓
+
+STARsolo alignment
+
+↓
+
+Gene expression matrix + CRISPR guide information
+
+↓
+
+Seurat object generation
+
+↓
+
+Quality control and normalization
+
+↓
+
+PCA and UMAP visualization
+
+↓
+
+gRNA assignment validation
+
+↓
+
+Perturbation-specific pseudobulk differential expression
+
+↓
+
+GO enrichment and Hallmark GSEA
+
+↓
+
+AUCell pathway activity scoring
+
+↓
+
+Mechanistic interpretation
 
 ## Tools
 
@@ -62,6 +100,15 @@ Marker gene identification
 - PCA
 - UMAP
 - Louvain clustering
+
+Additional analysis tools:
+
+- DESeq2
+- clusterProfiler
+- enrichplot
+- AUCell
+- pheatmap
+- patchwork
 
 
 ## Results
