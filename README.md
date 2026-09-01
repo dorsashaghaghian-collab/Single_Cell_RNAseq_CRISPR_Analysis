@@ -18,6 +18,24 @@ The analysis integrates:
 - AUCell pathway activity scoring
 - mechanistic interpretation of perturbation effects
 
+## Project Highlights
+
+✔ End-to-end Perturb-seq analysis workflow
+
+✔ STARsolo-based single-cell preprocessing
+
+✔ Seurat-based QC, clustering and visualization
+
+✔ CRISPR perturbation identity assignment
+
+✔ Pseudobulk differential expression analysis
+
+✔ Hallmark pathway GSEA
+
+✔ AUCell single-cell pathway activity scoring
+
+✔ Mechanistic interpretation of perturbation-specific states
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
@@ -33,6 +51,10 @@ The analysis integrates:
 Research question:
 
 **How do genetic perturbations reshape cellular states and transcriptional programs at single-cell resolution?**
+
+## Computational workflow
+
+![Workflow](03_results/Figures/Figure1_Final_PerturbSeq_summary.png)
 
 
 ## Dataset
