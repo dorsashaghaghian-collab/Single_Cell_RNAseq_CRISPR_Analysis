@@ -1,0 +1,11 @@
+Seurat
+SeuratObject
+DESeq2
+AUCell
+clusterProfiler
+enrichplot
+ggplot2
+patchwork
+pheatmap
+dplyr
+tidyr
