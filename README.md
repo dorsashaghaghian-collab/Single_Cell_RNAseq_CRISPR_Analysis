@@ -1,3 +1,8 @@
+![R](https://img.shields.io/badge/R-4.3-blue)
+![Seurat](https://img.shields.io/badge/Seurat-single--cell-orange)
+![STARsolo](https://img.shields.io/badge/STARsolo-alignment-green)
+![Status](https://img.shields.io/badge/status-completed-success)
+
 # Single-cell Perturb-seq Analysis Reveals Perturbation-specific Transcriptional Programs
 
 ![Workflow](results/Figures/Figure1_Final_PerturbSeq_summary.png)
@@ -17,6 +22,17 @@ The analysis integrates:
 - Hallmark GSEA
 - AUCell pathway activity scoring
 - mechanistic interpretation of perturbation effects
+
+## Selected Outputs
+
+| Analysis | Output |
+|---|---|
+| QC | QC visualization |
+| Clustering | UMAP embedding |
+| Differential expression | DESeq2 results |
+| Pathway analysis | Hallmark GSEA |
+| Functional scoring | AUCell signatures |
+| Interpretation | Mechanistic signatures |
 
 ## Project Highlights
 
